@@ -1,19 +1,19 @@
 let topTitleDiv = "Points Unknown | Tutorial 10 | Mapbox Storytelling";
 
-let titleDiv =
-  "Title goes here";
+// let titleDiv =
+//   "Sergio's Morning Commute";
 
-let bylineDiv = "By Joel Konopo, Ilena Peng, Patricia Martínez Sastre and Luiz Fernando Toledo";
+// let bylineDiv = "";
 
 let descriptionDiv =
-  '<p>Description</p>' + '<p>More description</p>' + '<p>And more</p>';
+  '<p>Solano biked 31.3 miles over the course of 4.5 hours on Thursday, July 20, 2022.</p> <p>This is where he went and what he earned.</p>';
 
 let footerDiv =
-  'more words for the footer';
+  "<p>Created for the Columbia Journalism School's Point Unknown mapping class.</p> <p>All code and data is available on <a href='https://github.com/ilenapeng/nyc-delivery-cyclists'>GitHub.</a></p>";
 
-  // Number of slides that will drive (more = smoother)
+// Number of slides that will drive (more = smoother)
 // If this doesn't match the number of slides named 'drive-slide' in config below you will not complete the full journey
-var driveSlides = 7;
+var driveSlides = 19;
 
 // Number of points on drive route (more = higher quality, but slower to process)
 var driveSmoothness = 200;
@@ -43,15 +43,15 @@ var config = {
     // subtitle: 'A descriptive and interesting subtitle to draw in the reader',
     // byline: 'By a Digital Storyteller',
     // footer: 'Source: source citations, etc.',
-    topTitle: topTitleDiv,
-    title: titleDiv,
-    subtitle: "",
-    byline: bylineDiv,
+    // topTitle: topTitleDiv,
+    // title: titleDiv,
+    subtitle: "Sergio's Morning Commute",
+    // byline: bylineDiv,
     description: descriptionDiv,
     footer: footerDiv,
     chapters: [
         {
-            id: 'slide-0',
+            id: 'drive-slide-0',
             title: '9:05 AM | Chick-fil-A | 918 8th Ave',
             // image: 'https://freesvg.org/img/Placeholder.png',
             description: 
@@ -65,7 +65,7 @@ var config = {
             onChapterExit: []
         },
         {
-            id: 'drive-slide-0',
+            id: 'drive-slide-01',
             title: '9:36 AM | Pick a Bagel - 8th Ave | 891 8th Ave',
             description: 
                 '<p>Delivery pay: $3.75</p>' + 
@@ -79,7 +79,7 @@ var config = {
             onChapterExit: []
         },
         {
-            id: 'drive-slide-1',
+            id: 'drive-slide-02',
             title: '10:11 AM | Health King | 526 Fashion Ave #1',
             description: 
                 '<p>Delivery pay: $2.77</p>' + 
@@ -91,7 +91,7 @@ var config = {
             onChapterExit: []
         },
         {
-            id: 'drive-slide-2',
+            id: 'drive-slide-03',
             title: "10:20 AM | Junior's Restaurant | 1515 Broadway @, W 45th St",
             description: 
                 '<p>Delivery pay: $2.51</p>' + 
@@ -103,7 +103,7 @@ var config = {
             onChapterExit: []
         },
         {
-            id: 'drive-slide-3',
+            id: 'drive-slide-04',
             title: '10:55 AM | Juice Generation | 979 8th Ave',
             description: 
                 '<p>Delivery pay: $2.89</p>' + 
@@ -115,8 +115,8 @@ var config = {
             onChapterExit: []
         },
         {
-            id: 'drive-slide-4',
-            title: '11:00 AM | Le Pain Quotidien | CONFIRM ADDRESS',
+            id: 'drive-slide-05',
+            title: '11:00 AM | Le Pain Quotidien | 250 W 55th Street',
             description: 
                 '<p>Delivery pay: $2.14</p>' + 
                 '<p>Mileage: $0.16 for biking 0.667 miles</p>' + 
@@ -139,8 +139,8 @@ var config = {
         //     onChapterExit: []
         // },
         {
-            id: 'drive-slide-5',
-            title: '11:18 AM | Joe & The Juice | CONFIRM ADDRESS',
+            id: 'drive-slide-06',
+            title: '11:18 AM | Joe & The Juice | 801 Lexington Ave',
             description: 
                 '<p>Delivery pay: $1.85</p>' + 
                 '<p>Mileage: $0.15 for biking 0.625 miles</p>' + 
@@ -151,7 +151,7 @@ var config = {
             onChapterExit: []
         },
         {
-            id: 'drive-slide-6',
+            id: 'drive-slide-07',
             title: '11:27 AM | Americas Burgers And Wraps | 1159 3rd Ave #6067',
             description: 
                 '<p>Delivery pay: $2.63</p>' + 
@@ -163,8 +163,8 @@ var config = {
             onChapterExit: []
         },
         {
-            id: 'drive-slide-7',
-            title: '12:00 PM | Saar Indian Bistro | 241 W 51st St',
+            id: 'drive-slide-08',
+            title: '12:00 PM | Saar Indian Bistro | 241 W 51st Street',
             description: 
                 '<p>Delivery pay: $2.79</p>' + 
                 '<p>Mileage: $0.1 for biking 0.875 miles</p>' + 
@@ -175,8 +175,8 @@ var config = {
             onChapterExit: []
         },
         {
-            id: 'drive-slide-8',
-            title: '12:15 PM | Vegan On The Fly | 24 W 45th St',
+            id: 'drive-slide-09',
+            title: '12:15 PM | Vegan On The Fly | 24 W 45th Street',
             description: 
                 '<p>Delivery pay: $2.81</p>' + 
                 '<p>Mileage: $0.19 for biking 0.792 miles</p>' + 
@@ -187,8 +187,8 @@ var config = {
             onChapterExit: []
         },
         {
-            id: 'drive-slide-9',
-            title: '12:33 PM | Panera Bread | CONFIRM ADDRESS',
+            id: 'drive-slide-10',
+            title: '12:33 PM | Panera Bread | 452 5th Ave',
             description: 
                 '<p>Delivery pay: $2.92</p>' + 
                 '<p>Mileage: $0.28 for biking 1.167 miles</p>' + 
@@ -199,7 +199,7 @@ var config = {
             onChapterExit: []
         },
         {
-            id: 'drive-slide-10',
+            id: 'drive-slide-11',
             title: '12:46 PM | Cafe 37 | 47 W 37th St',
             description: 
                 '<p>Delivery pay: $2.79</p>' + 
@@ -211,8 +211,8 @@ var config = {
             onChapterExit: []
         },
         {
-            id: 'drive-slide-11',
-            title: "1:07 PM | Capriotti's Sandwich Shop | CONFIRM ADDRESS",
+            id: 'drive-slide-12',
+            title: "1:07 PM | Capriotti's Sandwich Shop | 300 E 61st Street",
             description: 
                 '<p>Delivery pay: $2.81</p>' + 
                 '<p>Mileage: $0.19 for biking 0.792 miles</p>' + 
@@ -223,7 +223,7 @@ var config = {
             onChapterExit: []
         },
         {
-            id: 'drive-slide-12',
+            id: 'drive-slide-13',
             title: '1:19 PM	| Veritable | 1201 2nd Ave',
             description: 
                 '<p>Delivery pay: $2.57</p>' + 
@@ -235,8 +235,8 @@ var config = {
             onChapterExit: []
         },
         {
-            id: 'drive-slide-13',
-            title: '1:39 PM | Taco Bell | CONFIRM ADDRESS',
+            id: 'drive-slide-14',
+            title: '1:39 PM | Taco Bell | 840 8th Ave',
             description: 
                 '<p>Delivery pay: $2.80</p>' + 
                 '<p>Mileage: $0.20 for biking 0.833 miles</p>' + 
@@ -247,8 +247,8 @@ var config = {
             onChapterExit: []
         },
         {
-            id: 'drive-slide-14',
-            title: "1:53 PM | Emack & Bolio's | CONFIRM ADDRESS",
+            id: 'drive-slide-15',
+            title: "1:53 PM | Emack & Bolio's | 1564 1st Ave",
             description: 
                 '<p>Delivery pay: $1.80</p>' + 
                 '<p>Mileage: $0.20 for biking 0.833 miles</p>' + 
@@ -259,8 +259,8 @@ var config = {
             onChapterExit: []
         },
         {
-            id: 'drive-slide-15',
-            title: '2:03 PM | Milano Market | CONFIRM ADDRESS',
+            id: 'drive-slide-16',
+            title: '2:03 PM | Milano Market | 1582 3rd Ave',
             description: 
                 '<p>Delivery pay: $1.86</p>' + 
                 '<p>Mileage: $0.14 for biking 0.583 miles</p>' + 
@@ -271,8 +271,8 @@ var config = {
             onChapterExit: []
         },
         {
-            id: 'drive-slide-16',
-            title: '2:09 PM | Milano Market | CONFIRM ADDRESS',
+            id: 'drive-slide-17',
+            title: '2:09 PM | Milano Market | 1582 3rd Ave',
             description: 
                 '<p>Delivery pay: $2.87</p>' + 
                 '<p>Mileage: $0.13 for biking 0.542 miles</p>' + 
@@ -283,8 +283,8 @@ var config = {
             onChapterExit: []
         },
         {
-            id: 'drive-slide-17',
-            title: '2:34 PM | SUBWAY® | CONFIRM ADDRESS',
+            id: 'drive-slide-18',
+            title: '2:34 PM | SUBWAY® | 52 Vanderbilt Ave',
             description: 
                 '<p>Delivery pay: $2.90</p>' + 
                 '<p>Mileage: $0.10 for biking 0.417 miles</p>' + 
@@ -295,7 +295,7 @@ var config = {
             onChapterExit: []
         },
         {
-            id: 'drive-slide-18',
+            id: 'drive-slide-19',
             title: '2:38 PM | Green Bean Cafe | 1413 York Ave',
             description: 
                 '<p>Delivery pay: $1.95</p>' + 
