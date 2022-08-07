@@ -1,15 +1,11 @@
-let topTitleDiv = "Points Unknown | Tutorial 10 | Mapbox Storytelling";
+// let topTitleDiv = "";
 
-// let titleDiv =
-//   "Sergio's Morning Commute";
+// let titleDiv = "";
 
 // let bylineDiv = "";
 
-let descriptionDiv =
-  '<p>Solano biked 31.3 miles over the course of 4.5 hours on Thursday, July 20, 2022.</p> <p>This is where he went and what he earned.</p>';
-
-let footerDiv =
-  "<p>Created for the Columbia Journalism School's Point Unknown mapping class.</p> <p>All code and data is available on <a href='https://github.com/ilenapeng/nyc-delivery-cyclists'>GitHub.</a></p>";
+// let descriptionDiv = "";
+// let footerDiv = "";
 
 // Number of slides that will drive (more = smoother)
 // If this doesn't match the number of slides named 'drive-slide' in config below you will not complete the full journey
@@ -45,10 +41,10 @@ var config = {
     // footer: 'Source: source citations, etc.',
     // topTitle: topTitleDiv,
     // title: titleDiv,
-    subtitle: "Sergio's Morning Commute",
+    // subtitle: "Sergio's Morning Commute",
     // byline: bylineDiv,
-    description: descriptionDiv,
-    footer: footerDiv,
+    // description: descriptionDiv,
+    // footer: footerDiv,
     chapters: [
         {
             id: 'drive-slide-0',
@@ -58,7 +54,7 @@ var config = {
                 '<p>Delivery pay: $3.51</p>' + 
                 '<p>Mileage: $0.20 for biking 0.833 miles</p>' + 
                 '<p>Tip: $2.65</p>' + '<hr>' + 
-                '<p><b>Order Order total: $6.36</b></p>',
+                '<p><b>Order total: $6.36</b></p>',
             location: {
             },
             onChapterEnter: [],
@@ -71,7 +67,8 @@ var config = {
                 '<p>Delivery pay: $3.75</p>' + 
                 '<p>Mileage: $0.36 for biking 1.5 miles</p>' + 
                 '<p>Tip: $3.59</p>' + '<hr>' + 
-                '<p><b>Order total: $7.70</b></p>',
+                '<p><b>Order total: $7.70</b></p>' + 
+                '<h3>Total: $14.06</h3>',
             location: {
                 // location information is from the drive route
             },
@@ -85,7 +82,8 @@ var config = {
                 '<p>Delivery pay: $2.77</p>' + 
                 '<p>Mileage: $0.23 for biking 0.958 miles</p>' + 
                 '<p>Tip: $2.70</p>' + '<hr>' + 
-                '<p><b>Order total: $5.70</b></p>',
+                '<p><b>Order total: $5.70</b></p>' + 
+                '<h3>Total: $19.76</h3>',
             location: {},
             onChapterEnter: [],
             onChapterExit: []
@@ -97,7 +95,8 @@ var config = {
                 '<p>Delivery pay: $2.51</p>' + 
                 '<p>Mileage: $0.21 for biking 0.875 miles</p>' + 
                 '<p>Tip: $10.00</p>' + '<hr>' + 
-                '<p><b>Order total: $12.72</b></p>',
+                '<p><b>Order total: $12.72</b></p>' + 
+                '<h3>Total: $32.48</h3>',
             location: {},
             onChapterEnter: [],
             onChapterExit: []
@@ -109,7 +108,8 @@ var config = {
                 '<p>Delivery pay: $2.89</p>' + 
                 '<p>Mileage: $0.11 for biking 0.458 miles</p>' + 
                 '<p>Tip: $2.12</p>' + '<hr>' + 
-                '<p><b>Order total: $5.12</b></p>',    
+                '<p><b>Order total: $5.12</b></p>' + 
+                '<h3>Total: $37.60</h3>',    
             location: {},
             onChapterEnter: [],
             onChapterExit: []
@@ -121,7 +121,8 @@ var config = {
                 '<p>Delivery pay: $2.14</p>' + 
                 '<p>Mileage: $0.16 for biking 0.667 miles</p>' + 
                 '<p>Tip: $5.53</p>' + '<hr>' + 
-                '<p><b>Order total: $7.83</b></p>',
+                '<p><b>Order total: $7.83</b></p>' + 
+                '<h3>Total: $45.43</h3>',
             location: {},
             onChapterEnter: [],
             onChapterExit: []
@@ -145,7 +146,8 @@ var config = {
                 '<p>Delivery pay: $1.85</p>' + 
                 '<p>Mileage: $0.15 for biking 0.625 miles</p>' + 
                 '<p>Tip: $5.27</p>' + '<hr>' + 
-                '<p><b>Order total: $7.27</b></p>',
+                '<p><b>Order total: $7.27</b></p>' + 
+                '<h3>Total: $52.70</h3>',
             location: {},
             onChapterEnter: [],
             onChapterExit: []
@@ -157,7 +159,8 @@ var config = {
                 '<p>Delivery pay: $2.63</p>' + 
                 '<p>Mileage: $0.37 for biking 1.542 miles</p>' + 
                 '<p>Tip: $4.29</p>' + '<hr>' + 
-                '<p><b>Order total: $7.29</b></p>',            
+                '<p><b>Order total: $7.29</b></p>' + 
+                '<h3>Total: $59.99</h3>',            
             location: {},
             onChapterEnter: [],
             onChapterExit: []
@@ -169,7 +172,8 @@ var config = {
                 '<p>Delivery pay: $2.79</p>' + 
                 '<p>Mileage: $0.1 for biking 0.875 miles</p>' + 
                 '<p>Tip: $4.81</p>' + '<hr>' + 
-                '<p><b>Order total: $7.81</b></p>',            
+                '<p><b>Order total: $7.81</b></p>' + 
+                '<h3>Total: $67.80</h3>',            
             location: {},
             onChapterEnter: [],
             onChapterExit: []
@@ -181,7 +185,8 @@ var config = {
                 '<p>Delivery pay: $2.81</p>' + 
                 '<p>Mileage: $0.19 for biking 0.792 miles</p>' + 
                 '<p>Tip: $4.47</p>' + '<hr>' + 
-                '<p><b>Order total: $7.47</b></p>',            
+                '<p><b>Order total: $7.47</b></p>' + 
+                '<h3>Total: $75.27</h3>',            
             location: {},
             onChapterEnter: [],
             onChapterExit: []
@@ -193,7 +198,8 @@ var config = {
                 '<p>Delivery pay: $2.92</p>' + 
                 '<p>Mileage: $0.28 for biking 1.167 miles</p>' + 
                 '<p>Tip: $3.69</p>' + '<hr>' + 
-                '<p><b>Order total: $6.89</b></p>',            
+                '<p><b>Order total: $6.89</b></p>' + 
+                '<h3>Total: $82.16</h3>',            
             location: {},
             onChapterEnter: [],
             onChapterExit: []
@@ -205,7 +211,8 @@ var config = {
                 '<p>Delivery pay: $2.79</p>' + 
                 '<p>Mileage: $0.26 for biking 1.083 miles</p>' + 
                 '<p>Tip: $3.15</p>' + '<hr>' + 
-                '<p><b>Order total: $6.20</b></p>',            
+                '<p><b>Order total: $6.20</b></p>' + 
+                '<h3>Total: $88.36</h3>',            
             location: {},
             onChapterEnter: [],
             onChapterExit: []
@@ -217,7 +224,8 @@ var config = {
                 '<p>Delivery pay: $2.81</p>' + 
                 '<p>Mileage: $0.19 for biking 0.792 miles</p>' + 
                 '<p>Tip: $6.76</p>' + '<hr>' + 
-                '<p><b>Order total: $9.76</b></p>',            
+                '<p><b>Order total: $9.76</b></p>' + 
+                '<h3>Total: $94.72</h3>',            
             location: {},
             onChapterEnter: [],
             onChapterExit: []
@@ -229,7 +237,8 @@ var config = {
                 '<p>Delivery pay: $2.57</p>' + 
                 '<p>Mileage: $0.35 for biking 1.458 miles</p>' + 
                 '<p>Tip: $5.26</p>' + '<hr>' + 
-                '<p><b>Order total: $8.18</b></p>',            
+                '<p><b>Order total: $8.18</b></p>' + 
+                '<h3>Total: $102.85</h3>',            
             location: {},
             onChapterEnter: [],
             onChapterExit: []
@@ -241,7 +250,8 @@ var config = {
                 '<p>Delivery pay: $2.80</p>' + 
                 '<p>Mileage: $0.20 for biking 0.833 miles</p>' + 
                 '<p>Tip: $2.64</p>' + '<hr>' + 
-                '<p><b>Order total: $5.64</b></p>',            
+                '<p><b>Order total: $5.64</b></p>' + 
+                '<h3>Total: $108.49</h3>',            
             location: {},
             onChapterEnter: [],
             onChapterExit: []
@@ -253,7 +263,8 @@ var config = {
                 '<p>Delivery pay: $1.80</p>' + 
                 '<p>Mileage: $0.20 for biking 0.833 miles</p>' + 
                 '<p>Tip: $5.00</p>' + '<hr>' + 
-                '<p><b>Order total: $7.00</b></p>',            
+                '<p><b>Order total: $7.00</b></p>' + 
+                '<h3>Total: $115.49</h3>',            
             location: {},
             onChapterEnter: [],
             onChapterExit: []
@@ -265,7 +276,8 @@ var config = {
                 '<p>Delivery pay: $1.86</p>' + 
                 '<p>Mileage: $0.14 for biking 0.583 miles</p>' + 
                 '<p>Tip: $4.55</p>' + '<hr>' + 
-                '<p><b>Order total: $6.55</b></p>',
+                '<p><b>Order total: $6.55</b></p>' + 
+                '<h3>Total: $122.04</h3>',
             location: {},
             onChapterEnter: [],
             onChapterExit: []
@@ -277,7 +289,8 @@ var config = {
                 '<p>Delivery pay: $2.87</p>' + 
                 '<p>Mileage: $0.13 for biking 0.542 miles</p>' + 
                 '<p>Tip: $5.00</p>' + '<hr>' + 
-                '<p><b>Order total: $8.00</b></p>',            
+                '<p><b>Order total: $8.00</b></p>' + 
+                '<h3>Total: $130.04</h3>',            
             location: {},
             onChapterEnter: [],
             onChapterExit: []
@@ -289,7 +302,8 @@ var config = {
                 '<p>Delivery pay: $2.90</p>' + 
                 '<p>Mileage: $0.10 for biking 0.417 miles</p>' + 
                 '<p>Tip: $5.00</p>' + '<hr>' + 
-                '<p><b>Order total: $8.00</b></p>',            
+                '<p><b>Order total: $8.00</b></p>' + 
+                '<h3>Total: $138.04</h3>',            
             location: {},
             onChapterEnter: [],
             onChapterExit: []
@@ -301,21 +315,11 @@ var config = {
                 '<p>Delivery pay: $1.95</p>' + 
                 '<p>Mileage: $0.05 for biking 0.208 miles</p>' + 
                 '<p>Tip: $4.00</p>' + '<hr>' + 
-                '<p><b>Order total: $6.00</b></p>',           
+                '<p><b>Order total: $6.00</b></p>' + 
+                '<h3>Total: $144.04</h3>',           
             location: {},
             onChapterEnter: [],
             onChapterExit: []
         },
-        // {
-        //     id: 'drive-slide-19',
-        //     title: 'Second Title',
-        //     description: 
-        //         '<p>Delivery pay: $3.51</p>' + 
-        //         '<p>Mileage: $0.20 for biking 0.833 miles</p>' + 
-        //         '<p>Tip: $2.65</p>' + '<hr>' + 
-        //         '<p><b>Order total: $6.36</b></p>',            location: {},
-        //     onChapterEnter: [],
-        //     onChapterExit: []
-        // },
     ]
 };
